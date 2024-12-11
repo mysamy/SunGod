@@ -1,0 +1,25 @@
+:root {
+    --backgroundColor: #ffffff;
+    --fontSizeNormal: 16px;
+    --spacing-base: 10px;
+  }
+  
+  body {
+    width: 100vw;
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--font-size-normal);
+    color: var(--primary-color);
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+

@@ -1,0 +1,58 @@
+
+
+  
+.wrapper {
+    
+    background: radial-gradient(circle, hsla(157, 20%, 70%, 1) 0%, hsla(257, 50%, 5%, 1) 5%, hsla(82, 50%, 50%, 0.9) 50%, hsla(190, 100%, 50%, 0.51));
+    background-repeat: repeat; /* Répétition dans toutes les directions */
+    background-size: auto; /* Taille par défaut */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 100vh;
+    width: 100vw;
+    background-blend-mode: luminosity, luminosity;
+    mix-blend-mode: hue; /* Remplacé par la valeur de $bwrapper */
+    z-index: 12; /* Remplacé par la valeur de $zwrapper */
+  }
+  svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -12; /* Remplaçé par la valeur de $zsvg */
+    mix-blend-mode: difference; /* Remplaçé par la valeur de $bsvg */
+    animation: hie 65s infinite cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+  
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: 3; /* Remplaçé par la valeur de $zcanvas */
+    mix-blend-mode: color-dodge; /* Remplaçé par la valeur de $bcanvas */
+  }
+  
+  #canv {
+    z-index: -2; /* Remplaçé par la valeur de $zcanv */
+    mix-blend-mode: difference; /* Remplaçé par la valeur de $bcanv */
+  }
+  
+  @keyframes hie {
+    0% {
+      filter: contrast(1.1) brightness(1.5);
+    }
+    50% {
+      filter: brightness(1.2) contrast(1.1) opacity(0);
+    }
+    100% {
+      filter: hue-rotate(160deg);
+      background: white;
+    }
+  }

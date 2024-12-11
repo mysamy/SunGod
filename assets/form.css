@@ -1,0 +1,58 @@
+form {
+    display: flex;
+    flex-direction: column;
+}
+.contact {
+    max-width: 600px;
+    /* Limiter la largeur du formulaire */
+    margin: 30px auto;
+    /* Centrer le formulaire sur la page */
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.1);
+    /* Ombre pour l'effet visuel */
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Champs de texte */
+input,
+textarea {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: vertical;
+    /* Permet de redimensionner uniquement verticalement */
+    height: 150px;
+    /* Hauteur par défaut du textarea */
+}
+
+/* Bouton */
+button {
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #25802a;
+}
+
+button:focus {
+    outline: none;
+    /* Retirer le contour du focus */
+}
